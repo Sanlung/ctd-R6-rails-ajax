@@ -1,13 +1,56 @@
 <h1>AJAX</h1>
 <p>Find me in app/views/ajax/home.html.erb</p>
 <%= link_to 'Session', '/ajax/session' %>
+<hr />
 <div id="rest-ops">
-<button id="list-members" type="button">List members</button><br>
-<label>member first name</label><input id="member-firstName"><label>member last name</label>
-<input id="member-lastName"><button id="create-member" type="button">Create member</button><br>
-<label>member ID</label><input id="member-id" type="number"><label>member first name</label>
-<input id="member-firstName1"><label>member last name</label>
-<input id="member-lastName1"><button id="update-member" type="button">Update member</button><br>
+  <button id="list-members" type="button">List members</button>
+  <br />
+  <label>member first name</label>
+  <input id="member-firstName" />
+  <label>member last name</label>
+  <input id="member-lastName" />
+  <button id="create-member" type="button">Create member</button>
+  <br />
+  <label>member ID</label>
+  <input id="member-id" type="number" />
+  <label>member first name</label>
+  <input id="member-firstName1" />
+  <label>member last name</label>
+  <input id="member-lastName1" />
+  <button id="update-member" type="button">Update member</button>
+  <br />
+  <label>member ID</label>
+  <input id="member-id1" type="number" />
+  <button id="delete-member" type="button">Delete member</button>
+  <hr />
+  <label>member ID</label>
+  <input id="member-id2" type="number" />
+  <button id="list-facts" type="button">List facts</button>
+  <br />
+  <label>member ID</label>
+  <input id="member-id3" type="number" />
+  <label>fact</label>
+  <input id="fact" type="text" />
+  <label>likes</label>
+  <input id="likes" type="text" />
+  <button id="create-fact" type="button">Create fact</button>
+  <br />
+  <label>member ID</label>
+  <input id="member-id4" type="number" />
+  <label>fact ID</label>
+  <input id="fact-id" type="number" />
+  <label>fact</label>
+  <input id="fact1" type="text" />
+  <label>likes</label>
+  <input id="likes1" type="text" />
+  <button id="update-fact" type="button">Update fact</button>
+  <br />
+  <label>member ID</label>
+  <input id="member-id5" type="number" />
+  <label>fact ID</label>
+  <input id="fact-id1" type="number" />
+  <button id="delete-fact" type="button">Delete fact</button>
 </div>
 <div id="results-div"></div>
+
 <%= javascript_pack_tag 'ajax_ops' %>
